@@ -6,9 +6,7 @@ namespace WinForms231229_kontrolkaErrorProvider
 
         public Form1()
         {
-            InitializeComponent();
-                      
-
+            InitializeComponent();                    
         }
 
 
@@ -26,9 +24,14 @@ namespace WinForms231229_kontrolkaErrorProvider
                     break;
                 }
 
-            }
+            }            
+        }
 
-            
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            errorProviderMoja.Clear();
+            errorProviderMoja.SetError(textBox2, " ");
+            errorProviderMoja.GetError(textBox2);
         }
     }
 }

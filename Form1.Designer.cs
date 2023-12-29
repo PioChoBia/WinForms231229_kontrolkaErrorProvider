@@ -34,6 +34,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labelKomunikat = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,11 +81,40 @@
             this.labelKomunikat.TabIndex = 4;
             this.labelKomunikat.Text = "_";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(357, 250);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(12, 15);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "_";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 247);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "wprowadź jakiś znak";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(163, 247);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.labelKomunikat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -102,5 +134,8 @@
         private TextBox textBox1;
         private Label label2;
         private Label labelKomunikat;
+        private Label label3;
+        private Label label4;
+        private TextBox textBox2;
     }
 }
